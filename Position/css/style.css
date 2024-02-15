@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 1.5rem;
   font-family: "Roboto", "sans-serif";
@@ -53,4 +56,56 @@ body {
   background-color: orange;
   position: sticky;
   top: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+.blue {
+  background-color: #00f;
+}
+.red {
+  background-color: #f00;
+}
+.green {
+  background-color: #0f0;
+}
+
+header,
+footer {
+  color: #fff;
+  text-align: center;
+  height: 100px;
+}
+
+header {
+  font-size: 5rem;
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  background-color: orange;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+a:visited {
+  color: #fff;
+}
+
+.social {
+  background-color: royalblue;
+  color: #fff;
+  font-size: inherit;
+  padding: 1rem;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
 }
