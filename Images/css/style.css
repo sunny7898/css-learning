@@ -7,11 +7,59 @@
 }
 
 body {
-  font-family: "Nunito" sans-serif;
+  font-family: "Nunito", sans-serif;
   min-height: 100vh;
 }
 
-.example {
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -1000px;
+}
+
+.container {
+  background-color: rgb(251, 210, 156);
+  background-image: url("../img/map-2176x1451.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  border: 2px solid #000;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: hsla(0, 0%, 100%, 0.205);
+}
+
+.h1 {
+  font-size: 5rem;
+  color: aliceblue;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.profile-pic-figure {
+  width: 35%;
+}
+
+.profile-pic-figure img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 5px double #000;
+  border-radius: 50%;
+}
+
+/* Example 2: */
+
+/* Example 1: */
+/* .example {
   margin-top: 20px;
   padding-left: 20px;
   border: 1px solid red;
@@ -21,4 +69,4 @@ body {
   width: 25%;
   height: auto;
   display: block;
-}
+} */
