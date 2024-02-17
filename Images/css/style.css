@@ -6,11 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Nunito", sans-serif;
-  min-height: 100vh;
-}
-
+/* Utilility class starts */
 .nowrap {
   white-space: nowrap;
 }
@@ -19,8 +15,19 @@ body {
   position: absolute;
   left: -1000px;
 }
+/* Utility class ends */
 
-.container {
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  background-color: aliceblue;
+  background: repeat-y right center url("../img/bubbles.png"),
+    no-repeat linear-gradient(to left, steelblue, #fff);
+  background-size: 20%, auto;
+}
+
+/* Example 2: */
+/* .container {
   background-color: rgb(251, 210, 156);
   background-image: url("../img/map-2176x1451.png");
   background-repeat: no-repeat;
@@ -54,9 +61,7 @@ body {
   min-width: 100px;
   border: 5px double #000;
   border-radius: 50%;
-}
-
-/* Example 2: */
+} */
 
 /* Example 1: */
 /* .example {
@@ -70,3 +75,16 @@ body {
   height: auto;
   display: block;
 } */
+
+/* Example 3: */
+.clip {
+  font-weight: 800;
+  font-size: 18rem;
+  text-align: center;
+  background-image: url("../img/scenic-2200x1331.png");
+  background-size: 100%;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: hsla(0, 0%, 0%, 0.241);
+}
