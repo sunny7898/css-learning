@@ -46,3 +46,37 @@ main {
 footer {
   bottom: 0;
 }
+
+/* SMALL  */
+@media screen and (min-width: 576px) {
+  body {
+    background-color: green;
+    background-image: radial-gradient(whitesmoke, green);
+  }
+  nav {
+    display: none;
+  }
+}
+
+/* MOBILE DEVICE - LANDSCAPE */
+@media screen and (orientation: landscape) {
+  body {
+    background-color: firebrick;
+    background-image: radial-gradient(whitesmoke, firebrick);
+  }
+}
+
+/* MOBILE DEVICE - LANDSCAPE - MORE SPECIFIC */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  body {
+    background-color: dodgerblue;
+    background-image: radial-gradient(whitesmoke, dodgerblue);
+  }
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+  nav {
+    display: none;
+  }
+}
